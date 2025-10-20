@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc Mừng Ngày Phụ Nữ Việt Nam 20/10</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Background Animation -->
+        <div class="background-animation">
+            <div class="floating-hearts">
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+                <div class="heart">💝</div>
+                <div class="heart">💘</div>
+                <div class="heart">💖</div>
+                <div class="heart">💕</div>
+                <div class="heart">💗</div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1 class="title">Chúc Mừng Ngày Phụ Nữ Việt Nam</h1>
+                <div class="date">20/10/2024</div>
+            </div>
+
+            <!-- Music Player Section -->
+            <div class="music-player-section">
+                <h3 class="music-title">Nhạc nền cho ngày đặc biệt 🎵</h3>
+                <div class="music-player">
+                    <div class="player-controls">
+                        <button class="control-btn" id="prevBtn">⏮️</button>
+                        <button class="control-btn play-pause-btn" id="playPauseBtn">▶️</button>
+                        <button class="control-btn" id="nextBtn">⏭️</button>
+                    </div>
+                    <div class="track-info">
+                        <div class="track-name" id="trackName">Chọn bài hát để phát</div>
+                        <div class="track-progress">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <div class="time-info">
+                                <span class="current-time" id="currentTime">0:00</span>
+                                <span class="total-time" id="totalTime">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="volume-control">
+                        <span class="volume-icon">🔊</span>
+                        <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="50">
+                    </div>
+                </div>
+                <div class="playlist">
+                    <div class="playlist-item active" data-src="music/song1.mp3" data-name="Bài hát 1">
+                        <span class="playlist-number">1</span>
+                        <span class="playlist-name">Bài hát 1</span>
+                        <span class="playlist-duration">3:45</span>
+                    </div>
+                    <div class="playlist-item" data-src="music/song2.mp3" data-name="Bài hát 2">
+                        <span class="playlist-number">2</span>
+                        <span class="playlist-name">Bài hát 2</span>
+                        <span class="playlist-duration">4:12</span>
+                    </div>
+                    <div class="playlist-item" data-src="music/song3.mp3" data-name="Bài hát 3">
+                        <span class="playlist-number">3</span>
+                        <span class="playlist-name">Bài hát 3</span>
+                        <span class="playlist-duration">3:28</span>
+                    </div>
+                    <div class="playlist-item" data-src="music/song4.mp3" data-name="Bài hát 4">
+                        <span class="playlist-number">4</span>
+                        <span class="playlist-name">Bài hát 4</span>
+                        <span class="playlist-duration">4:05</span>
+                    </div>
+                    <div class="playlist-item" data-src="music/song5.mp3" data-name="Bài hát 5">
+                        <span class="playlist-number">5</span>
+                        <span class="playlist-name">Bài hát 5</span>
+                        <span class="playlist-duration">3:52</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Photo Gallery Section -->
+            <div class="photo-gallery">
+                <h3 class="gallery-title">Khoảnh khắc đẹp của chúng ta 📸</h3>
+                <div class="photo-grid">
+                    <div class="photo-item">
+                        <img src="images/photo1.jpg" alt="Khoảnh khắc đẹp" class="photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Khoảnh khắc đẹp</span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photo2.jpg" alt="Khoảnh khắc đẹp" class="photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Khoảnh khắc đẹp</span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photo3.jpg" alt="Khoảnh khắc đẹp" class="photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Khoảnh khắc đẹp</span>
+                        </div>
+                    </div>
+                    <div class="photo-item">
+                        <img src="images/photo4.jpg" alt="Khoảnh khắc đẹp" class="photo">
+                        <div class="photo-overlay">
+                            <span class="photo-caption">Khoảnh khắc đẹp</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="message-card">
+                <div class="card-content">
+                    <h2 class="greeting">Gửi đến em bé của anh ❤️</h2>
+                    <div class="message">
+                        <p class="main-message">Hôm nay là 20/10, anh chúc em bé của anh sẽ luôn xinh đẹp, sẽ luôn thành
+                            công trên con đường học tập, trên con đường thăng tiến, chúc em chân cứng đá mềm đi đâu cũng
+                            gặp những người tốt, chúc em sẽ luôn tràn đầy năng lượng, nhiệt huyết.</p>
+                        <p class="sub-message">Anh biết khoảng thời gian qua chúng ta vẫn còn nhiều thứ chưa được như ý
+                            muốn, chúng ta dẫu vẫn có những lúc chưa hiểu ý của nhau, anh vẫn có những lúc làm em buồn,
+                            chúng ta đôi lúc hơi khó xử, nhưng anh tin chúng ta sẽ cùng nhau hoàn thiện để trở nên tốt
+                            hơn với nhau.</p>
+                        <p class="wish">Anh biết ơn em thật nhiều, vì em đã yêu anh, đã chấp nhận những thiếu sót của
+                            anh và cả những lúc cả 2 cùng khó xử nữa. Anh yêu em bé của anh nhiều, sẽ luôn là bệ phóng
+                            để em bay xa.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Couple Photo Section -->
+            <div class="couple-photo-section">
+                <h3 class="couple-title">Chúng ta cùng nhau 💕</h3>
+                <div class="couple-photo-container">
+                    <img src="images/couple.jpg" alt="Ảnh cặp đôi" class="couple-photo">
+                    <div class="couple-photo-overlay">
+                        <div class="couple-quote">
+                            <p>"Tình yêu là khi hai người cùng nhau vượt qua mọi khó khăn"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="interactive-section">
+                <button class="love-button" id="loveButton">
+                    <span class="button-text">Click để gửi tình yêu 💕</span>
+                </button>
+
+                <div class="love-counter">
+                    <span class="counter-text">Tình yêu đã gửi: </span>
+                    <span class="counter-number" id="loveCounter">0</span>
+                    <span class="counter-unit"> lần</span>
+                </div>
+            </div>
+
+            <!-- Memory Photos Section -->
+            <div class="memory-photos">
+                <h3 class="memory-title">Những kỷ niệm đẹp 🎈</h3>
+                <div class="memory-grid">
+                    <div class="memory-item">
+                        <img src="images/memory1.png" alt="Kỷ niệm đẹp" class="memory-photo">
+                        <div class="memory-caption">Kỷ niệm đẹp</div>
+                    </div>
+                    <div class="memory-item">
+                        <img src="images/memory2.jpg" alt="Kỷ niệm đẹp" class="memory-photo">
+                        <div class="memory-caption">Kỷ niệm đẹp</div>
+                    </div>
+                    <div class="memory-item">
+                        <img src="images/memory3.jpg" alt="Kỷ niệm đẹp" class="memory-photo">
+                        <div class="memory-caption">Kỷ niệm đẹp</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flowers-section">
+                <div class="flower" data-flower="🌹">🌹</div>
+                <div class="flower" data-flower="🌻">🌻</div>
+                <div class="flower" data-flower="🌺">🌺</div>
+                <div class="flower" data-flower="🌸">🌸</div>
+                <div class="flower" data-flower="🌷">🌷</div>
+            </div>
+
+            <div class="footer">
+                <p class="signature">Với tất cả tình yêu từ anh 💙</p>
+                <div class="sparkles">
+                    <span class="sparkle">✨</span>
+                    <span class="sparkle">⭐</span>
+                    <span class="sparkle">✨</span>
+                    <span class="sparkle">⭐</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
