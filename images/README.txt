@@ -10,7 +10,7 @@ HƯỚNG DẪN SỬ DỤNG FOLDER IMAGES
 4. photo4.jpg - Ảnh thứ tư trong gallery
 
 ẢNH CẶP ĐÔI:
-5. couple.jpg - Ảnh cặp đôi lớn
+5. couple.jpg - Ảnh cặp đôi lớn (tỷ lệ 9:16 dọc)
 
 ẢNH KỶ NIỆM (3 ảnh):
 6. memory1.png - Kỷ niệm đầu tiên
@@ -21,7 +21,7 @@ LƯU Ý:
 - Hỗ trợ định dạng: JPG, JPEG, PNG
 - Kích thước khuyến nghị:
   + Gallery photos: 300x300px hoặc tỷ lệ vuông
-  + Couple photo: 500x400px hoặc tỷ lệ 5:4
+  + Couple photo: 300x533px hoặc tỷ lệ 9:16 (dọc)
   + Memory photos: 180x320px hoặc tỷ lệ 9:16 (dọc)
 - File không quá nặng để tải nhanh
 - Nên sử dụng ảnh chất lượng cao, rõ nét

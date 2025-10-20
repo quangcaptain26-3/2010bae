@@ -46,13 +46,36 @@ class LoveWebsite {
       .then(() => {
         this.isPlaying = true;
         document.getElementById("playPauseBtn").textContent = "⏸️";
-        console.log("Nhạc đã tự động phát!");
+        console.log("🎵 Nhạc đã tự động phát!");
+
+        // Thêm hiệu ứng visual khi nhạc phát
+        this.addMusicVisualEffects();
       })
       .catch((error) => {
         console.log("Không thể tự động phát nhạc:", error);
         // Hiển thị thông báo cho user click để phát nhạc
         this.showAutoPlayMessage();
       });
+  }
+
+  addMusicVisualEffects() {
+    // Thêm hiệu ứng cho music player khi đang phát
+    const musicPlayer = document.querySelector(".music-player");
+    musicPlayer.style.animation = "musicPulse 2s ease-in-out infinite";
+
+    // Thêm CSS animation cho music player
+    const style = document.createElement("style");
+    style.textContent = `
+      @keyframes musicPulse {
+        0%, 100% { 
+          box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(59, 130, 246, 0.7);
+        }
+        50% { 
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15), 0 0 0 10px rgba(59, 130, 246, 0);
+        }
+      }
+    `;
+    document.head.appendChild(style);
   }
 
   showAutoPlayMessage() {
@@ -129,6 +152,9 @@ class LoveWebsite {
       .then(() => {
         this.isPlaying = true;
         document.getElementById("playPauseBtn").textContent = "⏸️";
+
+        // Thêm hiệu ứng visual khi phát nhạc
+        this.addMusicVisualEffects();
       })
       .catch((error) => {
         console.log("Không thể phát nhạc:", error);
@@ -140,6 +166,10 @@ class LoveWebsite {
     this.audio.pause();
     this.isPlaying = false;
     document.getElementById("playPauseBtn").textContent = "▶️";
+
+    // Tắt hiệu ứng visual khi pause
+    const musicPlayer = document.querySelector(".music-player");
+    musicPlayer.style.animation = "";
   }
 
   previousTrack() {
